@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReactJS Render</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>ReactJS Render</h1>
+  </header>
+  <div class="wrapper">
+    <div class="container">
+      <div id="content"></div>
+    </div> <!-- .container-->
+  </div> <!-- .wrapper-->
+  <footer>
+    <small><a href="https://opensource.org/licenses/MIT">MIT</a></small>
+  </footer>
+  <script src="https://unpkg.com/react@15.3.1/public/react.min.js"></script>
+  <script src="https://unpkg.com/react-dom@15.3.1/public/react-dom.min.js"></script>
+  <script>
+    ReactDOM.render(
+      React.createElement('h1', null, 'Hello World'),
+      document.getElementById('content')
+    )
+  </script>
+</body>
+
+</html>
