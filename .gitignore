@@ -9,7 +9,6 @@ ehthumbs.db
 Thumbs.db
 
 node_modules
-public/js
 server.js
 api
 fetch
