@@ -4,7 +4,7 @@ Examples illustrating key concepts in [ReactJS](https://facebook.github.io/react
 
 ## Instructions
 
-For JSX, Component, Properties, State, Stateless Functional Components, Inches to Centimetres Calculator, Router DOM and Fetch.
+For JSX, component, properties, state, stateless functional components, inches to centimetres calculator, router DOM and server router examples.
 
 1. Install dependencies: `npm install`
 2. Compile and watch: `compile-watch`
@@ -51,7 +51,7 @@ For Server Router.
 2. Run: `compile`
 3. Run: `compile-server`
 4. Run: `node server.js`
-5. Visit: [http://localhost:3000](http://localhost:3000).
+5. Visit: [http://localhost:3000](http://localhost:3000)
 
 ## Server Router
 
