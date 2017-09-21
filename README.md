@@ -47,10 +47,10 @@ Routes to render components on the server.
 
 For Server Router.
 
-1. Run: `npm install`
-2. Run: `compile`
-3. Run: `compile-server`
-4. Run: `node server.js`
+1. Install dependencies: `npm install`
+2. Compile client: `compile`
+3. Compile server: `compile-server`
+4. Start server: `node server.js`
 5. Visit: [http://localhost:3000](http://localhost:3000)
 
 ## Server Router
