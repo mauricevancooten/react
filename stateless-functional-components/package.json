@@ -10,7 +10,9 @@
     "webpack": "^3.3.0"
   },
   "babel": {
-    "presets": ["react"]
+    "presets": [
+      "react"
+    ]
   },
   "scripts": {
     "compile": "webpack",
