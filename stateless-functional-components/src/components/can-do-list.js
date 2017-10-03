@@ -5,28 +5,32 @@ class CanDoList extends Component {
     super(props)
     this.state = {
       tasks: [
-        {title: 'Dishes', id: 1},
-        {title: 'Mow lawn', id: 2},
-        {title: 'Groceries', id: 3}
+        {
+          title: 'Dishes',
+          id: 1
+        }, {
+          title: 'Mow lawn',
+          id: 2
+        }, {
+          title: 'Groceries',
+          id: 3
+        }
       ]
     }
   }
   render() {
+    // Container component
     return (
-      // Container component
       <ol>
-        {this.state.tasks.map( (task) => {
-          return <Task title={task.title} key={task.id}/>
-        })}
+        {this.state.tasks.map((task) => (<Task title={task.title} key={task.id}/>))}
       </ol>
     )
   }
 }
+
 // Representational component
-const Task = function(props) {
-  return (
-    <li>{props.title}</li>
-  )
-}
+const Task = (props) => (
+  <li>{props.title}</li>
+)
 
 export default CanDoList
