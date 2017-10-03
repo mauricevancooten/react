@@ -45,7 +45,7 @@ Routes to render components on the server.
 
 ## Instructions
 
-For Server Router.
+For server router and data examples.
 
 1. Install dependencies: `npm install`
 2. Compile client: `compile`
@@ -56,6 +56,10 @@ For Server Router.
 ## Server Router
 
 Universal routes to render components on the server.
+
+## Data
+
+Components to render JSON data, includes universal routing and pagination.
 
 ## Licence
 

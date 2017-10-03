@@ -1,0 +1,31 @@
+{
+	 "artists": [
+		{
+			"id": "01",
+			"handle": "otto-boll",
+			"name": "Otto Boll",
+			"title": "Helix",
+			"medium": "Steel",
+			"work":"static/images/helix.jpg",
+			"thumb":"static/images/helix-thumb.jpg"
+			},
+		{
+			"id": "02",
+			"handle": "tony-cragg",
+			"name": "Tony Cragg",
+			"title": "Current Version",
+		 	"medium": "Fiberglass",
+		  "work":"static/images/current-version.jpg",
+			"thumb":"static/images/current-version-thumb.jpg"
+		  },
+		{
+			"id": "03",
+			"handle": "norio-imai",
+			"name": "Norio Imai",
+			"title": "White Ceremony",
+		 	"medium": "Acrylic, cotton cloth, plastic mold",
+		  "work":"static/images/white-ceremony.jpg",
+			"thumb":"static/images/white-ceremony-thumb.jpg"
+		}
+	]
+}
