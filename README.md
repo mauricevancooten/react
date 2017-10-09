@@ -45,7 +45,7 @@ Routes to render components on the server.
 
 ## Instructions
 
-For server router and data examples.
+For server router, dat and meta examples.
 
 1. Install dependencies: `npm install`
 2. Compile client: `compile`
@@ -60,6 +60,10 @@ Universal routes to render components on the server.
 ## Data
 
 Components to render JSON data, includes universal routing and pagination.
+
+## Meta
+
+Uses [React Helmet](https://github.com/nfl/react-helmet) to render meta titles and descriptions.
 
 ## Licence
 
