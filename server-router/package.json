@@ -23,7 +23,6 @@
     "compile-server": "webpack --config webpack.config.server.js"
   },
   "dependencies": {
-    "express": "^4.15.4",
-    "hbs": "^4.0.1"
+    "express": "^4.15.4"
   }
 }

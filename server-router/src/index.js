@@ -3,6 +3,7 @@ import React from 'react'
 import ReactDOMServer from 'react-dom/server'
 import {StaticRouter} from 'react-router'
 import Router from './components/router'
+import Template from './components/template'
 
 const app = express()
 
@@ -18,7 +19,7 @@ app.get('*', (req, res) => {
       <Router/>
     </StaticRouter>
   )
-  res.render('index', { title: 'Site Name', content:`${html}`})
+  res.status(200).send(Template(html: html))
 })
 
 app.listen(3000, () => {
