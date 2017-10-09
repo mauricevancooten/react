@@ -10,3 +10,4 @@ Thumbs.db
 
 node_modules
 server.js
+public/js/*.js
