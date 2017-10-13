@@ -10,7 +10,6 @@ const Template = ({html}) => {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="stylesheet" href="/static/css/styles.css" />
     </head>
-
     <body>
       <div id="content">${html}</div>
       <script src="/static/js/bundle.js"></script>

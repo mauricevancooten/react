@@ -17,7 +17,13 @@ app.get('*', (req, res) => {
       <Router/>
     </StaticRouter>
   )
-  res.status(200).send(Template({html: html}))
+  
+  if (context.status) {
+    res.status(404).send(Template({html: html}))
+  } else {
+    res.status(200).send(Template({html: html}))
+  }
+
 })
 
 app.listen(3000, () => {
