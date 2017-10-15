@@ -41,11 +41,11 @@ Presentational and container components.
 
 ## Router DOM
 
-Routes to render components on the server.
+Uses [React Router v4](https://github.com/ReactTraining/react-router) to render components on the server.
 
 ## Instructions
 
-For server router, dat and meta examples.
+For server router, data, meta and router fade in fade out examples.
 
 1. Install dependencies: `npm install`
 2. Compile client: `compile`
@@ -55,15 +55,19 @@ For server router, dat and meta examples.
 
 ## Server Router
 
-Universal routes to render components on the server.
+Uses [React Router v4](https://github.com/ReactTraining/react-router) for universal routes to render components on the server.
 
 ## Data
 
-Components to render JSON data, includes universal routing and pagination.
+Components to render JSON data, includes universal routing with [React Router v4](https://github.com/ReactTraining/react-router) and pagination.
 
 ## Meta
 
 Uses [React Helmet](https://github.com/nfl/react-helmet) to render meta titles and descriptions.
+
+## Router Fade In Fade Out
+
+Uses [React Router v4](https://github.com/ReactTraining/react-router) and [React Transition Group v2](https://github.com/reactjs/react-transition-group) to fade routes in and out.
 
 ## Licence
 
