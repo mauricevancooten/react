@@ -16,11 +16,12 @@ class InchesToCentimetres extends Component {
     this.setState({inches: ''})
   }
   render() {
-    // console.log(this.state)
+    const {inches} = this.state
+    // console.log(inches)
     return (
       <div>
         <p>Inches: <input type='text' onChange={this.inchesChanged}/></p>
-        <h2>Centimetres: {this.state.inches} </h2>
+        <h2>Centimetres: {inches} </h2>
         <button onClick={this.resetInches}>Reset</button>
       </div>
     )
