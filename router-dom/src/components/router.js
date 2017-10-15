@@ -22,9 +22,7 @@ const Router = () => (
         <Route exact path='/' render={() => <h1>Home</h1>}/>
         <Route path='/about' component={About}/>
       </div>
-      {/* .container */}
     </div>
-    {/* .wrapper */}
     <footer>
       <small>
         <a href='https://opensource.org/licenses/MIT'>MIT</a>
