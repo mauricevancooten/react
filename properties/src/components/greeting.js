@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Greeting = (props) => (
-    <p>Hello my name is {props.name}, I'm an {props.occupation}.</p>
+const Greeting = ({name, occupation}) => (
+    <p>Hello my name is {name}, I'm an {occupation}.</p>
 )
 
 export default Greeting
