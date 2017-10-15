@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
 
 class Pagination extends Component {
   constructor(props) {
@@ -11,16 +12,17 @@ class Pagination extends Component {
     }
   }
   componentDidMount() {
-    for (let i = 0; i < this.props.art.length; i++) {
-      if (this.props.id === this.props.art[i].handle) {
-        if (i < (this.props.art.length - 1)) {
-          let next = this.props.art[i + 1].handle
+    const {art} = this.props
+    for (let i = 0; i < art.length; i++) {
+      if (this.props.id === art[i].handle) {
+        if (i < (art.length - 1)) {
+          let next = art[i + 1].handle
           this.setState({next: next, last: false})
         } else {
           this.setState({last: true})
         }
         if (i > 0) {
-          let prev = this.props.art[i - 1].handle
+          let prev = art[i - 1].handle
           this.setState({prev: prev, first: false})
         } else {
           this.setState({first: true})
@@ -29,13 +31,14 @@ class Pagination extends Component {
     }
   }
   render() {
+    const {first, last, prev, next} = this.state
     return (
       <div className='pagination'>
         <span>
-          <a className={this.state.first ? 'hide-text' : ''} href={this.state.prev}>Prev</a>
+          <Link className={first ? 'hide-text' : ''} to={prev}>Prev</Link>
         </span>
         <span>
-          <a className={this.state.last ? 'hide-text' : ''} href={this.state.next}>Next</a>
+          <Link className={last ? 'hide-text' : ''} to={next}>Next</Link>
         </span>
       </div>
     )

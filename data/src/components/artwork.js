@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Artwork = (props) => (
+const Artwork = ({name, picture, title, medium}) => (
   <div>
-    <h1>{props.name}</h1>
-    <img src={props.picture} alt="props.title" />
-    <p><strong>{props.title}</strong><br/>
-      {props.medium}
+    <h1>{name}</h1>
+    <img src={picture} alt="props.title" />
+    <p><strong>{title}</strong><br/>
+      {medium}
     </p>
   </div>
 )

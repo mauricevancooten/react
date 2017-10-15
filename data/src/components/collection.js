@@ -1,11 +1,11 @@
-import React, {Component} from 'react'
+import React from 'react'
 import {Link} from 'react-router-dom'
 
-const Collection = (props) => (
+const Collection = ({art}) => (
   <div className='gallery'>
-    {props.art.map((artist) => {
+    {art.map((artist) => {
       return (
-        <Link to={`/collection/${artist.handle}`} key={artist.id}><img src={artist.thumb} alt={artist.name}/></Link>
+        <Link to={`/${artist.handle}`} key={artist.id}><img src={artist.thumb} alt={artist.name}/></Link>
       )
     })}
   </div>
