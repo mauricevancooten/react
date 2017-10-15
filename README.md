@@ -7,7 +7,7 @@ Examples illustrating key concepts in [ReactJS](https://facebook.github.io/react
 For JSX, component, properties, state, stateless functional components, inches to centimetres calculator, router DOM and server router examples.
 
 1. Install dependencies: `npm install`
-2. Compile and watch: `compile-watch`
+2. Compile and watch: `npm run compile-watch`
 
 Router DOM example depends on a server side environment.
 
@@ -48,8 +48,8 @@ Uses [React Router v4](https://github.com/ReactTraining/react-router) to render 
 For server router, data, meta and router fade in fade out examples.
 
 1. Install dependencies: `npm install`
-2. Compile client: `compile`
-3. Compile server: `compile-server`
+2. Compile client: `npm run compile`
+3. Compile server: `npm run compile-server`
 4. Start server: `node server.js`
 5. Visit: [http://localhost:3000](http://localhost:3000)
 
