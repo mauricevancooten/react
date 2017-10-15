@@ -18,8 +18,15 @@ app.get('*', (req, res) => {
       <Router/>
     </StaticRouter>
   )
-  const helmet = Helmet.renderStatic();
-  res.status(200).send(Template({html: html, helmet: helmet}))
+
+  const helmet = Helmet.renderStatic()
+
+  if (context.status) {
+    res.status(404).send(Template({html: html, helmet: helmet}))
+  } else {
+    res.status(200).send(Template({html: html, helmet: helmet}))
+  }
+
 })
 
 app.listen(3000, () => {

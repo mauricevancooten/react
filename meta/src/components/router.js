@@ -1,10 +1,11 @@
 import React from 'react'
-import {Route, Link} from 'react-router-dom'
+import {Route, Link, Switch} from 'react-router-dom'
 import About from './about'
 import Home from './home'
 import Helmet from 'react-helmet'
+import NotFound from './not-found'
 
-const Router = (props) => (
+const Router = () => (
   <div>
     <Helmet
 					htmlAttributes={{lang: 'en', amp: undefined}} // amp takes no value
@@ -30,8 +31,11 @@ const Router = (props) => (
     </header>
     <div className='wrapper'>
       <div className='container'>
+        <Switch>
         <Route exact path='/' component={Home}/>
         <Route path='/about' component={About}/>
+        <Route component={NotFound} />
+        </Switch>
       </div>
     </div>
     <footer>
