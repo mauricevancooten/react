@@ -12,12 +12,9 @@ class Router extends Component {
       art: []
     }
   }
-  componentWillMount() {
-    const {art} = this.state
+  componentDidMount() {
     const {data} = this.props
-    for (let prop in data) {
-      art.push(data[prop])
-    }
+    this.setState({art:[...data]})
   }
   render() {
     const {art} = this.state
