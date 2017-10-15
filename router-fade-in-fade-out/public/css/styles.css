@@ -1,0 +1,88 @@
+body {
+  background: #eeeeee;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 0;
+}
+
+a {
+  color: crimson;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+
+/* Layout
+------------------------------------------*/
+
+header,
+.container,
+footer {
+  margin: 0 auto;
+  width: 88%;
+  max-width: 1080px;
+}
+
+.wrapper {
+  padding: 1em 0;
+  background: #ffffff;
+}
+
+/* Navigation
+------------------------------------------*/
+
+nav ul {
+  list-style:none;
+  padding:0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: .5em;
+}
+
+nav ul li a {
+  padding: .5em 1em;
+  background: #cccccc;
+  border-radius: 15px;
+  transition: 1s;
+}
+
+nav ul li a:hover {
+  background: pink;
+}
+
+/* Transitions
+------------------------------------------*/
+
+.example-enter {
+   opacity: 0.01;
+ }
+
+ .example-enter.example-enter-active {
+   opacity: 1;
+   transition: opacity 500ms ease-in;
+
+ }
+
+.example-exit {
+   opacity: 1;
+ }
+
+.example-exit.example-exit-active {
+   opacity: 0.01;
+   transition: opacity 300ms ease-in;
+   position:absolute;
+ }
+
+ .container {
+   position: relative;
+ }
+
+ .sticky {
+   position:absolute;
+   height:300px;
+ }
