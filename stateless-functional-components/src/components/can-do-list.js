@@ -19,18 +19,18 @@ class CanDoList extends Component {
     }
   }
   render() {
-    // Container component
+    const {tasks} = this.state
     return (
       <ol>
-        {this.state.tasks.map((task) => (<Task title={task.title} key={task.id}/>))}
+        {tasks.map((task) => (<Task title={task.title} key={task.id}/>))}
       </ol>
     )
   }
 }
 
 // Representational component
-const Task = (props) => (
-  <li>{props.title}</li>
+const Task = ({title}) => (
+  <li>{title}</li>
 )
 
 export default CanDoList
