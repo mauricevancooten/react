@@ -20,7 +20,7 @@ app.get('*', (req, res) => {
 
   const html = ReactDOMServer.renderToString(
     <StaticRouter location={req.url} context={context}>
-      <Router art={data}/>
+      <Router data={data.artists}/>
     </StaticRouter>
   )
 
@@ -29,14 +29,14 @@ app.get('*', (req, res) => {
   if (!match.isExact) {
     res.status(404).send(Template({
       html: html,
-      data: JSON.stringify(data.artists)
+      data: data.artists
     }))
     return
   }
 
   res.status(200).send(Template({
     html: html,
-    data: JSON.stringify(data.artists)
+    data: data.artists
   }))
 })
 

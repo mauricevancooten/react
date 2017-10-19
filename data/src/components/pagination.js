@@ -12,9 +12,9 @@ class Pagination extends Component {
     }
   }
   componentDidMount() {
-    const {art} = this.props
+    const {art, id} = this.props
     for (let i = 0; i < art.length; i++) {
-      if (this.props.id === art[i].handle) {
+      if (id === art[i].handle) {
         if (i < (art.length - 1)) {
           let next = art[i + 1].handle
           this.setState({next: next, last: false})
