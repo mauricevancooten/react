@@ -29,7 +29,7 @@ app.get('*', (req, res) => {
   if (!match.isExact) {
     res.status(404).send(Template({
       html: html,
-      data: data.artists
+      // data: data.artists
     }))
     return
   }

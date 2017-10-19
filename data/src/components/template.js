@@ -11,7 +11,7 @@ const Template = ({html, data}) => {
     </head>
     <body>
       <div id="content">${html}</div>
-      <script>window.__data__ = ${JSON.stringify(data)}</script>
+      ${data ? `<script>window.__data__ = ${JSON.stringify(data)}</script>` : ''}
       <script src="/static/js/bundle.js"></script>
     </body>
   </html>`
