@@ -25,7 +25,7 @@ const Router = ({data}) => (
         <Switch>
           <Route exact path='/' render={() => (<Collection art={data}/>)}/>
           <Route exact path='/about' component={About}/> {data.map((artist, i) => {
-            return <Route exact path={`/${artist.handle}`} key={i} render={() => (<Artist art={art} id={artist.handle}/>)}/>
+            return <Route exact path={`/${artist.handle}`} key={i} render={() => (<Artist art={data} id={artist.handle}/>)}/>
           })}
           <Route component={NotFound}/>
         </Switch>
