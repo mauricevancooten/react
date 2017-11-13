@@ -4,7 +4,7 @@ Examples illustrating key concepts in [ReactJS](https://facebook.github.io/react
 
 ## Instructions
 
-For JSX, component, properties, state, stateless functional components, inches to centimetres calculator, router DOM and server router examples.
+For JSX, component, properties, state, stateless functional components, inches to centimetres calculator, router DOM, form field validation and form validation on submit examples.
 
 1. Install dependencies: `npm install`
 2. Compile and watch: `npm run compile-watch`
@@ -42,6 +42,14 @@ Presentational and container components.
 ## Router DOM
 
 Uses [React Router v4](https://github.com/ReactTraining/react-router) to render components on the server.
+
+## Form Field Validation
+
+Returns warnings and disables submit button if form field are left empty.
+
+## Form Validation On Submit
+
+Returns warnings if field are left empty or email is invalid after submitted.
 
 ## Instructions
 
