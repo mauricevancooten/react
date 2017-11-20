@@ -77,6 +77,23 @@ Uses [React Helmet](https://github.com/nfl/react-helmet) to render meta titles a
 
 Uses [React Router v4](https://github.com/ReactTraining/react-router) and [React Transition Group v2](https://github.com/reactjs/react-transition-group) to fade routes in and out.
 
+## Contact Form SMTP
+
+Uses [Nodemailer](https://nodemailer.com/about/) to send email over SMTP. Requires a configuration file with your email credentials; IP address, port, user email and password.
+
+`config/keys.js`
+
+``` js
+const keys = {
+  mtHost: '1.1.1.1',
+  mtPort: 111,
+  mtUser: 'you@example.com',
+  mtPass: 'password'
+}
+
+export default keys
+```
+
 ## Licence
 
 Licensed under the [MIT](https://opensource.org/licenses/MIT) License.
