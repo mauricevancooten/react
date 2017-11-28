@@ -97,7 +97,7 @@ export default keys
 
 Requires a [MongoDB](https://www.mongodb.com) installation. Listening on default port: 27017.
 
-Uses [MongoDB](https://www.mongodb.com) to store data and [Redux](https://redux.js.org/) to persist state.
+Create, read, update and delete, uses [MongoDB](https://www.mongodb.com) to store data and [Redux](https://redux.js.org/) to persist state.
 
 ## Licence
 
