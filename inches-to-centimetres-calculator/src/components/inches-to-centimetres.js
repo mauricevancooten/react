@@ -3,9 +3,9 @@ import React, {Component} from 'react'
 class InchesToCentimetres extends Component {
   constructor(props) {
     super(props)
-    this.state = {inches:''}
     this.inchesChanged = this.inchesChanged.bind(this)
     this.resetInches = this.resetInches.bind(this)
+    this.state = {inches:''}
   }
   inchesChanged(event) {
     let centimetres = event.target.value  / .39370079
