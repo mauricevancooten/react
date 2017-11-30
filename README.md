@@ -53,7 +53,7 @@ Returns warnings if field are left empty or email is invalid after submitted.
 
 ## Instructions
 
-For server router, data, meta, router fade in fade out, contact form SMTP and CRUD redux examples.
+For server router, data, meta, router fade in fade out, contact form SMTP, CRUD and CRUD redux examples.
 
 1. Install dependencies: `npm install`
 2. Compile client: `npm run compile`
@@ -93,6 +93,15 @@ const keys = {
 
 export default keys
 ```
+## CRUD
+
+Requires a [MongoDB](https://www.mongodb.com) installation. Listening on default port: 27017.
+
+Create, read, update and delete, uses [MongoDB](https://www.mongodb.com) to store data.
+
+### N.B.
+> Data is not persisted in this example, therefore to update state from the database a browser refresh is required. This example is intended as a stepping stone for the following CRUD Redux example.
+
 ## CRUD Redux
 
 Requires a [MongoDB](https://www.mongodb.com) installation. Listening on default port: 27017.
