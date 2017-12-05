@@ -53,7 +53,7 @@ Returns warnings if field are left empty or email is invalid after submitted.
 
 ## Instructions
 
-For server router, data, meta, router fade in fade out, contact form SMTP, CRUD and CRUD redux examples.
+For server router, data, meta, router fade in fade out, contact form SMTP, CRUD, CRUD redux and OAuth Redux examples.
 
 1. Install dependencies: `npm install`
 2. Compile client: `npm run compile`
