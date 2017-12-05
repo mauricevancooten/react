@@ -108,7 +108,7 @@ Requires a [MongoDB](https://www.mongodb.com) installation. Listening on default
 
 Create, read, update and delete, uses [MongoDB](https://www.mongodb.com) to store data and [Redux](https://redux.js.org/) to persist state.
 
-## OAuth redux
+## Passport OAuth redux
 
 Authorised routes, user login using [Passport](http://www.passportjs.org/) and [Google OAuth 2.0](https://github.com/jaredhanson/passport-google-oauth2)
 
