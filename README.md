@@ -39,6 +39,10 @@ Assinging state to a class that converts inches to centimetres.
 
 Presentational and container components.
 
+## CSS Modules
+
+Modular Sass, where class names are scoped locally by default.
+
 ## Router DOM
 
 Uses [React Router v4](https://github.com/ReactTraining/react-router) to render components on the server.
