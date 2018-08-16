@@ -7,7 +7,7 @@ import Template from './components/template'
 
 const app = express()
 
-app.use('/static', express.static('public'))
+app.use('/', express.static('public'))
 
 app.get('*', (req, res) => {
   const context = {}

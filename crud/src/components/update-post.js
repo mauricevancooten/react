@@ -5,7 +5,6 @@ class UpdatePost extends Component {
   constructor(props) {
     super(props)
     this.handleSubmit = this.handleSubmit.bind(this)
-    this.handleClick = this.handleClick.bind(this)
     this.titleChanged = this.titleChanged.bind(this)
     this.handleChanged = this.handleChanged.bind(this)
     this.contentChanged = this.contentChanged.bind(this)
@@ -66,7 +65,6 @@ class UpdatePost extends Component {
         <br/>
         ID: {this.state.mongoId}
         <br/>
-        <button onClick={this.handleClick}>Delete</button>
       </small>
       <p className={this.state.updated
           ? ''

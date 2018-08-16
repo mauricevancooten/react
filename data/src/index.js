@@ -1,7 +1,7 @@
 import express from 'express'
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
-import {StaticRouter, matchPath} from 'react-router'
+import {StaticRouter} from 'react-router'
 import Router from './components/router'
 import data from './data.json'
 import Template from './components/template'
