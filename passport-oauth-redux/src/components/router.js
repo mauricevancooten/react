@@ -44,7 +44,7 @@ class MainRouter extends Component {
       <div className='wrapper'>
         <div className='container'>
           <Switch>
-            <Route exact="exact" path='/' render={() => <h1>Home</h1>}/>
+            <Route exact={true} path='/' render={() => <h1>Home</h1>}/>
             <Route path='/about' component={About}/>
             <Route path='/auth/google/callback' render={() => <h1>Home</h1>}/>
             <PrivateRoute path='/dashboard' component={Dashboard}/>
