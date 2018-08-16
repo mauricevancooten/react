@@ -1,2 +1,28 @@
-.hello-world__highlight___1_NSd{background:pink;color:red}body{background:#eee;margin:0}.container,footer,header{margin:0 auto;width:88%;max-width:1080px}.wrapper{background:#fff;padding:1em 0}footer{overflow:auto}body{font-size:16px;font-family:Trebuchet MS,Helvetica,sans-serif}
+.src-components-hello-world__highlight--1_NSd {
+  background: pink;
+  color: lime; }
+
+body {
+  background: #eeeeee;
+  margin: 0; }
+
+header,
+.container,
+footer {
+  margin: 0 auto;
+  width: 88%;
+  max-width: 1080px; }
+
+.wrapper {
+  background: #ffffff;
+  padding: 1em 0; }
+
+footer {
+  overflow: auto; }
+
+body {
+  font-size: 16px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif; }
+
+
 /*# sourceMappingURL=styles.css.map*/

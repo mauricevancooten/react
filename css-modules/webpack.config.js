@@ -1,16 +1,19 @@
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
-
-const extractSass = new ExtractTextPlugin({
-  filename: 'css/styles.css'
-})
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
+  mode: 'development',
   entry: ['./src/app.js', './src/sass/styles.scss'],
   output: {
     path: __dirname + '/public/',
     filename: 'js/bundle.js'
   },
-  devtool: 'sourcemap',
+  devtool: 'source-map',
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'css/styles.css',
+      chunkFilename: 'css/[id].css',
+    })
+  ],
   module: {
     rules: [
       {
@@ -18,34 +21,19 @@ module.exports = {
         exclude: /(node_modules)/,
         loader: 'babel-loader'
       }, {
-        test: /\.scss$/,
-        use: extractSass.extract({
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                minimize: true,
-                sourceMap: true,
-                modules: true,
-                localIdentName: '[name]__[local]___[hash:base64:5]'
-              }
-            },
-            {
-              loader: 'sass-loader',
-              options: {
-                sourceMap: true,
-                modules: true,
-                importLoaders: 2,
-                localIdentName: '[name]__[local]___[hash:base64:5]'
-              }
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader:'css-loader',
+            options: {
+              modules:true,
+              localIdentName: '[path][name]__[local]--[hash:base64:5]'
             }
-          ],
-          fallback: 'style-loader'
-        })
+          },
+          'sass-loader'
+        ],
       }
     ]
-  },
-  plugins: [
-    extractSass
-  ]
+  }
 }
