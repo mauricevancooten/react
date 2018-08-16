@@ -1,10 +1,11 @@
 module.exports = {
+  mode: 'development',
   entry: './src/app.js',
   output: {
     path: __dirname + '/public/js/',
     filename: 'bundle.js'
   },
-  devtool: 'sourcemap',
+  devtool: 'source-map',
   module: {
     rules: [
       {
