@@ -1,6 +1,6 @@
 # ReactJS
 
-Examples illustrating key concepts in [ReactJS](https://facebook.github.io/react/).
+Examples illustrating key concepts in [ReactJS](https://facebook.github.io/react/). Includes minimal Webpack 4 configuration where required.
 
 ## Instructions
 
@@ -45,7 +45,7 @@ Modular Sass, where class names are scoped locally by default.
 
 ## Router DOM
 
-Uses [React Router v4](https://github.com/ReactTraining/react-router) to render components on the server.
+Uses [React Router v4](https://github.com/ReactTraining/react-router) to render components on the server. This needs a server like localhost for routes to work.
 
 ## Form Field Validation
 
