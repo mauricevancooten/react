@@ -5,7 +5,7 @@ const SinglePost = ({posts, id}) => (
     {posts.map((post, i) => {
       if (post.handle === id) {
         return (
-          <div key='i'>
+          <div key={i}>
             <h1>{post.title}</h1>
             <div dangerouslySetInnerHTML={{__html: post.content}} />
           </div>
