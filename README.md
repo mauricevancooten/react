@@ -116,6 +116,18 @@ Create, read, update and delete, uses [MongoDB](https://www.mongodb.com) to stor
 
 Authorised routes, user login using [Passport](http://www.passportjs.org/) and [Google OAuth 2.0](https://github.com/jaredhanson/passport-google-oauth2), uses [Redux](https://redux.js.org/) to persist state.
 
+## Instructions
+
+For server code splitting example.
+
+1. Install dependencies: `npm install`
+2. Compile client: `npm run dev`
+3. Visit: [http://localhost:3000](http://localhost:3000)
+
+## Code Splitting
+
+Uses [React Loadable](https://github.com/jamiebuilds/react-loadable) to split and load code.
+
 ## Licence
 
 Licensed under the [MIT](https://opensource.org/licenses/MIT) License.
